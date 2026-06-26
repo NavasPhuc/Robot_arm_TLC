@@ -1,0 +1,30 @@
+# STM32CubeIDE workspace
+.metadata/
+
+# Build outputs
+**/Debug/
+**/Release/
+
+# Compiled files
+*.o
+*.d
+*.su
+*.cyclo
+*.elf
+*.hex
+*.bin
+*.map
+*.list
+*.axf
+*.lnp
+*.dep
+
+# Logs and temporary files
+*.log
+*.pdom
+*.snap
+*.tree
+
+# Keil user-generated files
+*.uvguix.*
+*.build_log.htm
