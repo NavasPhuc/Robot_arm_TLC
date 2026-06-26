@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"bb\startup_stm32f411xe.o"
+"bb\main.o"
+"bb\stm32f4xx_it.o"
+"bb\stm32f4xx_hal_msp.o"
+"bb\stm32f4xx_hal_adc.o"
+"bb\stm32f4xx_hal_adc_ex.o"
+"bb\stm32f4xx_hal_rcc.o"
+"bb\stm32f4xx_hal_rcc_ex.o"
+"bb\stm32f4xx_hal_flash.o"
+"bb\stm32f4xx_hal_flash_ex.o"
+"bb\stm32f4xx_hal_flash_ramfunc.o"
+"bb\stm32f4xx_hal_gpio.o"
+"bb\stm32f4xx_hal_dma_ex.o"
+"bb\stm32f4xx_hal_dma.o"
+"bb\stm32f4xx_hal_pwr.o"
+"bb\stm32f4xx_hal_pwr_ex.o"
+"bb\stm32f4xx_hal_cortex.o"
+"bb\stm32f4xx_hal.o"
+"bb\stm32f4xx_hal_exti.o"
+"bb\stm32f4xx_hal_tim.o"
+"bb\stm32f4xx_hal_tim_ex.o"
+"bb\stm32f4xx_hal_uart.o"
+"bb\system_stm32f4xx.o"
+--strict --scatter "bb\bb.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "bb.map" -o bb\bb.axf
